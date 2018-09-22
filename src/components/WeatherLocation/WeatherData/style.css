@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'roboto';
+}
+
+.App {
+    box-shadow: 10px 10px 42px -12px rgba(0, 0, 0, .5)
+}
+
+.weather-location {
+    padding-left: 10px;
+    padding-top: 10px;
+    color: #666;
+    text-align: left;
+}
+
+.weather-data-content {
+    background-color: whiteSmoke;
+    display: flex;
+    justify-content: space-around;
+    width: 500px;
+    height: 160px;
+    line-height: 100px;
+}
+
+.weather-temperature-content {
+    padding-top: 7%;
+}
+
+.temperature {
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 20px;
+    color: #333;
+}
+
+.temperature-type {
+    font-weight: bold;
+    color: #666;
+}
+
+.wicon {
+    color: orange;
+}
+
+.weather-extra-content {
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.extrainfo-text {
+    color: darkcyan;
+    font-size: 18px;
+    font-weight: bold;
+}

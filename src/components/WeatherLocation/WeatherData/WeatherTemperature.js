@@ -9,6 +9,7 @@ import {
     SNOW, 
     WINDY
 } from '../../../constants/weathers';
+import './style.css';
 
 const stateToIconName = weatherState => {
     switch (weatherState) {
@@ -31,16 +32,15 @@ const stateToIconName = weatherState => {
 
 const getWeatherIcon = weatherState => {
     return (
-        <WeatherIcons name={stateToIconName(weatherState)} size="2x" />        
+        <WeatherIcons className="wicon" name={stateToIconName(weatherState)} size="4x" />        
     )
 };
 
 const WeatherTemperature = ({ temperature, weatherState }) => (
-    <div>
+    <div className="weather-temperature-content">
         { getWeatherIcon(weatherState) }
-        <span>
-            { `${temperature} Cº` }
-        </span>
+        <span className="temperature">{temperature}</span>
+        <span className="temperature-type">Cº</span>
     </div>
 );
 
